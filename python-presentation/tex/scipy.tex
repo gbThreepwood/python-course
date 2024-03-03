@@ -1,0 +1,48 @@
+\begin{frame}{Scipy}
+  Scipy er eit bibliotek med funksjonar for mellom anna reguleringsteknikk. Det nyttar Numpy til å utføra berekningane.
+  
+\end{frame}
+
+
+\begin{frame}[containsverbatim]{Scipy}
+
+  \begin{minted}{python}
+from scipy import constants
+
+print(constants.gram)        #0.001
+print(constants.metric_ton)  #1000.0
+print(constants.grain)       #6.479891e-05
+print(constants.lb)          #0.45359236999999997
+print(constants.pound)       #0.45359236999999997
+  \end{minted}
+\end{frame}
+
+\begin{frame}[containsverbatim]{Scipy}
+
+Scipy kan importera og eksportera data i Matlab format.
+  
+  \begin{minted}{python}
+from scipy import io
+import numpy as np
+
+arr = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9,])
+
+io.savemat('arr.mat', {"vec": arr})
+mydata = io.loadmat('arr.mat')
+  \end{minted}
+  
+\end{frame}
+
+
+\begin{frame}[containsverbatim]{Laplacetransformasjon}
+
+  \begin{minted}{python}
+    
+  \end{minted}
+  
+\end{frame}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../python-presentation"
+%%% End:
