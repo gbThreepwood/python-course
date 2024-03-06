@@ -1,13 +1,52 @@
 
-\begin{frame}{Grunnleggande syntaks}
+\begin{frame}[containsverbatim]{Grunnleggande syntaks}
+
+  Python bruker innrykk for å gruppera kode. Som til dømes i denne funksjonen:
+
+\begin{minted}{python}
+def min_funksjon():
+  print("Melding frå funksjonen min_funksjon")
+  svar = 2+2
+  print("To pluss to er " str(svar))
+
+min_funksjon()
+\end{minted}
   
 \end{frame}
 
 \begin{frame}{Variablar og datatypar}
+
+  I Python treng du normalt ikkje spesifisera kva datatype du ynskjer når du oppretter ein variabel. Dette er implisitt i tilordninga av verdi til variabelen (på samme måte som i Matlab). Blandt dei innebygde datatypane finn ein:
+  
+  \begin{itemize}
+  \item int
+  \item float
+  \item str
+  \item list
+  \item tuple
+  \item set
+  \item dict
+  \item book
+  \item bytearray
+    \item +mange fleire
+  \end{itemize}
   
 \end{frame}
 
-\begin{frame}{Valgsetningar}
+\begin{frame}[containsverbatim]{Valgsetningar}
+
+  Dette er sikkert sjølvforklarande for alle som har programmert i eit anna språk tidlegare:
+  
+\begin{minted}{python}
+a = 50
+b = 45
+if b > a:
+  print("b er størst")
+elif a == b:
+  print("a og b er like")
+else:
+  print("a er størst")
+\end{minted}
   
 \end{frame}
 
