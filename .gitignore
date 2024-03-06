@@ -5,6 +5,8 @@
 !.gitignore
 !*.tex
 !*.ipynb
+!*.jpg
+!*.png
 
 # ...even if they are in subdirectories
 !*/
