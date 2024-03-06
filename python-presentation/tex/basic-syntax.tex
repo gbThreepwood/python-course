@@ -11,6 +11,54 @@
   
 \end{frame}
 
-\begin{frame}{Løkker}
+\begin{frame}[containsverbatim]{Løkker}
+
+For-løkker:
+
+\begin{minted}{python}
+for i in range(0, 5):
+	print(i)
+\end{minted}
+
+Iterasjon over element i lister:
+
+\begin{minted}{python}
+a = [3, 4, 5, 6, 8, 9, 20, 34]
+
+for x in a:
+	print(x+2)
+\end{minted}
   
 \end{frame}
+
+\begin{frame}[containsverbatim]{Løkker}
+	While-løkker:
+	
+\begin{minted}{python}
+i = 0
+while (i < 4):
+	i = i + 1
+	print("Talet er " + str(i))
+else:
+	print("Ferdig")
+\end{minted}
+	
+\end{frame}
+
+\begin{frame}[containsverbatim]{Komplekse tal}
+
+  Komplekse tal i Python er internt lagra på rektangulær form, til dømes \(5 + 7j\). Python nyttar \(j = \sqrt{-1}\) i staden for \(i\).
+
+\begin{minted}{python}
+  z = 3 + 4j
+  u = 230
+  i = u/z
+  import cmath
+  cmath.polar(i)
+\end{minted}
+  
+\end{frame}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../python-presentation"
+%%% End:
