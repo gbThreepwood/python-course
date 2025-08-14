@@ -1,0 +1,35 @@
+\begin{frame}[containsverbatim]{Numpy}
+  Numpy er eit bibliotek til Python for å gjera rekneoperasjonar på tabellar eller matriser. Dei ulike algoritmane for å utføra berekningane er implementert i C, slik at eit oppnår lite overhead. Syntaksen er dessverre ikkje like vakker som i Matlab, men ein har stort sett tilgong på dei samme funksjonane.
+
+\end{frame}
+
+\begin{frame}[containsverbatim]{Døme}
+  
+  Løys likninga:
+  
+  \begin{align}
+    x + 2y &= 1 \\
+    3x  + 5y &= 2
+  \end{align}
+  
+\begin{minted}{python}
+  import numpy as np
+
+  a = np.array([[1, 2], [3, 5]])
+  b = np.array([1, 2])
+  x = np.linalg.solve(a, b)
+\end{minted}
+
+Kan også gå via invers matrise:
+
+\begin{minted}{python}
+  a_inv = np.linalg.inv(a)
+  x = np.matmul(a_inv,b)
+\end{minted}
+
+\end{frame}
+%%% Local Variables:
+%%% TeX-command-extra-options: "-synctex=1 -shell-escape"
+%%% mode: latex
+%%% TeX-master: "../python-presentation"
+%%% End:

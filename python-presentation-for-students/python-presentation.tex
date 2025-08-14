@@ -1,0 +1,110 @@
+\documentclass[10pt,a4paper]{beamer}
+%\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[nynorsk]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+
+\usepackage[
+backend=biber,
+style=ieee,
+sorting=ynt
+]{biblatex}
+
+%\addbibresource{bib/latex-kurs-referansar.bib}
+
+\usepackage{svg}
+
+\usepackage{subfiles}
+
+\usepackage{multicol}
+
+\usetheme{metropolis}
+
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}[subsections numbered]
+
+\usepackage[pagewise]{lineno}
+\usepackage{csquotes}
+
+\usepackage{minted}
+\usepackage{listings}
+
+\usepackage{multirow}
+
+\usepackage{siunitx}
+\usepackage{steinmetz}
+
+\usepackage{xcolor}
+
+\usepackage{enumerate}
+
+\usepackage{lipsum}
+
+\usepackage{caption}
+\usepackage{subcaption}
+
+\usepackage{pgfplots}
+
+
+\title{Python for elektrofag}
+\date{\today}
+\author{Eirik Haustveit}
+\institute{Institutt for datateknologi, elektroteknologi og realfag}
+
+\begin{document}
+	
+	\titlepage
+
+	\section{Plan}
+
+	\begin{frame}{Plan}
+		
+          \begin{itemize}
+            %\item Motivasjon
+			\item Historikk og litt oversikt
+            \item Installasjon av Python
+            \item Grunnleggande syntaks
+            \item Komplekse tal
+            \item Numpy, sympy, scipy
+			%\item Demonstrasjon av nokre elektro pakkar
+		\end{itemize}
+		
+	\end{frame}
+
+
+	\subfile{tex/motivation.tex}
+	
+	\subfile{tex/history.tex}
+	
+	\subfile{tex/introduction.tex}	
+
+    \subfile{tex/basic-syntax.tex}
+
+    \subfile{tex/numpy.tex}
+
+    \subfile{tex/sympy.tex}
+
+    \subfile{tex/scipy.tex}
+
+    \subfile{tex/matplotlib.tex}
+    
+    \subfile{tex/pandas.tex}
+    
+    \subfile{tex/lcapy.tex}
+
+%	\begin{frame}{Referansar}	
+	
+%	\printbibliography 
+	
+%	\end{frame}
+	
+	
+\end{document}
+%%% Local Variables:
+%%% TeX-command-extra-options: "--shell-escape --syntex=1"
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
